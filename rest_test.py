@@ -11,9 +11,7 @@ def getdata():
 	# 999 chosen to brute force to get all members to appear in one data set, since no obvious API documentation
 	params = {'per_page': 999}
 
-	r = requests.get(baseurl + 'api/users',
-					 params=params,
-					 headers=requestheaders)
+	r = requests.get(baseurl + 'api/users', params=params, headers=requestheaders)
 
 	if r.status_code == requests.codes.ok:
 
