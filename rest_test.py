@@ -23,12 +23,12 @@ def getdata():
 		rawdata = rawjson['data']
 		print('=' * 10 + ' LIST OF USER INFORMATION ' + '=' * 10 + '\n')
 		for data in rawdata:
-			id = data['id']
+			dataid = data['id']
 			firstname = data['first_name']
 			lastname = data['last_name']
 			email = data['email']
 			avatar = data['avatar']
-			print('ID: {0}\nFIRST NAME: {1}\nLAST NAME: {2}\nEMAIL ADDRESS: {3}\nPROFILE AVATAR URL: {4}\n'.format(id, firstname, lastname, email, avatar))
+			print('ID: {0}\nFIRST NAME: {1}\nLAST NAME: {2}\nEMAIL ADDRESS: {3}\nPROFILE AVATAR URL: {4}\n'.format(dataid, firstname, lastname, email, avatar))
 	else:
 		print('Error in connecting!')
 
